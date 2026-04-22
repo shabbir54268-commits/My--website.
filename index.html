@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ayan | Web Developer</title>
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", Arial, sans-serif;
+}
+
+body {
+  background: #0f172a;
+  color: white;
+  line-height: 1.6;
+}
+
+header {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background: linear-gradient(-45deg, #0f172a, #1e3a8a, #0ea5e9, #0f172a);
+  background-size: 400% 400%;
+  animation: gradientMove 10s ease infinite;
+}
+
+@keyframes gradientMove {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+
+header h1 {
+  font-size: 60px;
+  animation: fadeDown 1s ease;
+}
+
+header p {
+  font-size: 20px;
+  margin-top: 10px;
+  color: #cbd5e1;
+  animation: fadeUp 1.5s ease;
+}
+
+.btn {
+  margin-top: 20px;
+  padding: 12px 25px;
+  background: #0ea5e9;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  text-decoration: none;
+  transition: 0.3s;
+  display: inline-block;
+}
+
+.btn:hover {
+  background: #0284c7;
+  transform: scale(1.05);
+}
+
+section {
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.card {
+  background: #1e293b;
+  padding: 25px;
+  margin: 20px 0;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+  transition: 0.3s;
+  transform: translateY(20px);
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.skills span {
+  display: inline-block;
+  background: #0ea5e9;
+  padding: 8px 12px;
+  margin: 5px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.skills span:hover {
+  background: #38bdf8;
+  transform: scale(1.1);
+}
+
+.contact {
+  text-align: center;
+  padding: 50px;
+  background: #0ea5e9;
+  margin-top: 40px;
+}
+
+.contact a {
+  background: white;
+  color: #0ea5e9;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.contact a:hover {
+  background: #e2e8f0;
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #020617;
+  color: #94a3b8;
+}
+
+@keyframes fadeUp {
+  from {opacity: 0; transform: translateY(20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeDown {
+  from {opacity: 0; transform: translateY(-20px);}
+  to {opacity: 1; transform: translateY(0);}
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 40px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>Ayan</h1>
+  <p>Creative Web Developer | HTML & CSS Specialist</p>
+  <a href="#about" class="btn">View My Work</a>
+</header>
+
+<section id="about">
+  <div class="card">
+    <h2>About Me</h2>
+    <p>
+      I am Ayan, a passionate beginner web developer focused on creating
+      modern, responsive, and visually appealing websites using HTML and CSS.
+    </p>
+  </div>
+
+  <div class="card">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span>HTML</span>
+      <span>CSS</span>
+      <span>Responsive Design</span>
+      <span>UI Design</span>
+      <span>Learning JavaScript</span>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Projects</h2>
+    <p>✔ Portfolio Website (This one)</p>
+    <p>✔ Business Landing Page (Demo)</p>
+    <p>✔ Product Showcase Page</p>
+  </div>
+</section>
+
+<div class="contact">
+  <h2>Let’s Work Together</h2>
+  <p>Need a website for your business or idea?</p>
+  <br>
+  <a href="https://wa.me/03463920678">Contact on WhatsApp</a>
+</div>
+
+<footer>
+  © 2026 Ayan | Web Developer
+</footer>
+
+</body>
+</html>
